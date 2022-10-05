@@ -224,76 +224,55 @@ footer{
 		</div>
         <hr>
 		<div class="col-12 order-2 order-md-3">
-        <h2 class="h1" ;="" id="form">Форма</h2>
+      <h2 class = "h1">Заполни!</h2>
 
-   <form action="/" ;="" class="form" method="POST">
+        <form action = "/" method = "POST" class = "form">
 
-          <label>
-              Имя:<br/>
-              <input name="field-name-1"
-                     value="" />
-          </label><br/>
-          <label>
-              E-mail:<br/>
-              <input name="field-email"
-                     value=""
-                     type="email" />
-          </label><br/>
-          <label>
-              Дата рождения:<br/>
-              <input name="field-date"
-                     value=""
-                     type="date" />
-          </label><br/>
-          Пол:<br/>
-          <label>
-              <input type="radio" checked="checked"
-                     name="radio-group-1" value="Значение1" />
-              Женский
-          </label>
-          <label>
-              <input type="radio"
-                     name="radio-group-1" value="Значение2" />
-              Мужской
-          </label><br/>
-          Количество конечностей:<br/>
-          <label>
-              <input type="radio" checked="checked"
-                     name="radio-group-2" value="Значение1" />
-              4
-          </label>
-          <label>
-              <input type="radio"
-                     name="radio-group-2" value="Значение2" />
-              6
-          </label><br/>
-          <label>
-              Сверхспособности:
-              <br/>
-              <select name="field-name-4[]"
-                      multiple="multiple">
-                  <option value="Значение1"> Бессмертие</option>
-                  <option value="Значение2">Прохождение сквозь стены</option>
-                  <option value="Значение3" selected="selected">Левитация</option>
-              </select>
-          </label><br/>
-          <label>
-              Биография:<br/>
-              <textarea name="field-name-2"></textarea>
-          </label><br/>
-          <br/>
-          <label>
-              <input type="checkbox"
-                     name="check-1" />
-              С контрактом ознакомлен(а)
-          </label><br/>
-          <input type="submit" value="Отправить" />
+          <label>Введите Имя:<br /><input name = "field-name-1" placeholder = "Введите имя" /></label> <!--1-->
+            <br />
+            <br />
+            <label>Введите почту (email):<br /><input name = "field-email" type = "email" placeholder = "Введите почту" /></label> <!--2-->
+            <br />
+            <br />
+            <label>Введите дату рождения:<br /><input name = "field-date" value = "2001-01-01" type = "date" /></label> <!--3-->
+            <br />
+            <br />
+            <label>Пол:<br /></label> <!--4-->
+            <label><input type = "radio" name = "radio-group-1" value = "Значение1" />Мужской</label>
+            <br />
+            <label><input type = "radio" name = "radio-group-1" value = "Значение2" />Женский</label>
+            <br />
+            <br />
+            <label>Количество конечностей:<br /></label> <!--5-->
+            <label><input type = "radio" name = "radio-group-2" value = "Значение1" />4</label>
+            <br />
+            <label><input type = "radio" name = "radio-group-2" value = "Значение2" />5</label>
+            <br />
+            <label><input type = "radio" name = "radio-group-2" value = "Значение3" />6</label>
+            <br />
+            <br />
+            <label>Выберите сверхспособность:<br /></label> <!--6-->
+            <select name = "field-name-4[]" multiple = "multiple">
+                <option value = "Значение1">Бессмертие</option>
+                <option value = "Значение2">Прохождение сквозь стены</option>
+                <option value = "Значение3">Левитация</option>
+            </select>
+            <br />
+            <br />
+            <label>Биография:<br /></label> <!--7-->
+            <textarea name = "field-name-2" placeholder = "Введите биографию"></textarea>
+            <br />
+            <br />
+            <label><input type = "checkbox" name = "check-1" /> С контрактом ознакомлен(а)</label> <!--8-->
+            <br />
+            <br />
+            <input type = "submit" value = "Отправить" /> <!--9-->
     
       </label></form></div></div>
     </div></div></div>
 	<div class="col-md-12 order-4 px-sm-3">
 	<footer>
-      <div class="container-fluid"><h2>(c)Богус Рустам 23</h2></div>
+      <div class="container-fluid"><h2>(c)Magamet Anchok 01</h2></div>
     </footer>
 	</div>
 	<div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
