@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+  <head>
+    <title>Сайт</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	  <style>
+	  *{
+	padding: 0px;
+	margin: 0px;
+}
+header{
+		background-image: url(border.png); 
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 12pt;
+  background-color:#2e2525;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #D7D1C5;
+}
+
+.container a {
+  color:#D7D1C5;
+}
+.container-fluid h2 {
+  color:#D7D1C5;
+}
+  
+.head{
+	width:100%;
+	padding: 15px; 
+	height:150px;
+}
+.photo
+{
+	float:left; 
+	margin:10px; 
+	width:100px; 
+	height:100px;
+}
+
+.navigation a{
+	color: #D7D1C5;
+	
+}
+
+.round {
+	float:left; 
+	margin:10px;
+	width:100px; 
+	height:133px;	
+    border-radius: 25px;
+    border: 3px solid #9E8576;
+    box-shadow: 0 0 7px #000;
+   }
+.head_1{
+	width:50%; 
+ background:#5E4E4A;
+ color: #D7D1C5;
+ padding:5px; 
+ border-width: 3px; 
+ border-color: #9E8576; 
+ border-style: dashed; 
+}	
+.h1 
+{
+ width:45%; 
+ background:#5E4E4A;
+ color: #D7D1C5;
+ padding:5px; 
+ border-width: 3px; 
+ border-color: #9E8576; 
+ border-style: solid; 
+ }
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #9E8576;
+  height: 35px;
+  align-content: center;
+}
+.maintable {
+  margin: 25px;
+  height: 200px;
+  width: 300px;
+  border: 3px solid #9E8576;
+  border-collapse: collapse;
+}
+.maintable td {
+  border: 3px solid #9E8576;
+  text-align: center;
+}
+.maintable tr:nth-child(2) {
+  background-color: #5E4E4A;
+}
+.content li {
+  margin-left: 25px;
+  height: auto;
+}
+form {
+  margin: 20px;
+  color: #D7D1C5;
+}
+footer{
+	 
+     background-color: #5E4E4A;
+	 padding: 15px;
+	 
+	
+}
+
+	  </style>
+  </head>
+
+  <body>
+  <div class="row d-flex mx-sm-m3">
+        <div class="col-md-12 order-1 px-sm-3">
+  <header>
+	<div class="container">
+    <div class="head"> 
+      <img class="round" src="Tiger.jpg" alt="Описание картинки для скрин-ридеров и поисковиков">
+      <div class="head_1"><h1>Maga Tiger</h1></div>
+    </div>
+	</div>
+	</header></div>
+	<div class="col-md-12 order-2 px-sm-3">
+	<nav>
+      <div class="container">
+		  <div class="row d-flex mx-sm-m3">
+            <div class="col-md order-1 px-sm-1">
+          <div class="h-100 py-3">
+		  <ul class="navigation">
+            <li><a href=" ">Главная</a></li></ul>
+			</div></div>
+			<div class="col-md order-2 px-sm-1">
+          <div class="h-100 py-3">
+            <ul class="navigation">
+            <li><a href=" ">Информация</a></li></ul>
+			</div></div>
+			<div class="col-md order-3 px-sm-1">
+          <div class="h-100 py-3">
+            <ul class="navigation">
+            <li><a href=" ">Ссылки</a></li></ul>
+			</div></div>
+			</div>
+      </div>
+    </nav>
+	</div>
+	<div class="col-md-12 order-3 px-sm-3">
+	<div class="content">
+      <div class="container">
+	  <div class="row d-flex mx-sm-m3">
+	  <div class="col-12 order-1">
+	    <h2 class="h1">Список ссылок</h2>
+      <ol>
+        <li><a href="http://moodle.kubsu.ru/">Moodle.kubsu.ru-главная страница</a></li>
+        <li><a href="https://moodle.kubsu.ru/">Moodle.kubsu.ru-главная страница(https)</a></li>
+        
+        <li><a href="ftp://example.com/exec.txt">Без авторизации</a></li>
+        <li><a href="ftp://example:1234@example.com/exec.txt">C авторизацией</a></li>
+        <li><a href="https://moodle.kubsu.ru/course/index.php?categoryid=12">Ссылка на сайт moodle.kubsu.ru на Факультет Компьютерных технологий и прикладной математики </a></li>
+        <li><a href="https://github.com/MagametAnchok/MagametAnchok.github.io/blob/main/index.html">Начало форума</a></li>
+        <li><a href="https://www.google.com/search?q=kubsu.ru&tbm=isch&ved=2ahUKEwjF4urCufzyAhUWvCoKHf4tCOoQ2-cCegQIABAA&oq=kubsu.ru&gs_lcp=CgNpbWcQDDIECAAQGDIECAAQGDIECAAQGDIECAAQGDoFCAAQgAQ6BAgAEB46BggAEAoQGDoECAAQAlDBclj3fGD9wQJoAHAAeACAAe8BiAGqBpIBBTIuNC4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=6YY_YYXKJ5b4qgH-26DQDg&bih=694&biw=1137?width=10&color=black">С двумя параметрами в URL</a></li>
+        <li><a href="https://www.kubsu.ru/ru"><img src="https://github.com/MagametAnchok/MagametAnchok.github.io/blob/main/Фото%20Кубгу.jpg?raw=true" alt="КУБГУ" width="200"></a></li>
+        <li>
+        <ul>
+        <li><a href="https://www.kubsu.ru/ru" title="Официальный сайт КубГУ">КубГУ</a></li>
+        <li><a href="https://www.kubsu.ru/ru/sveden" title="Сведения об образовательной организации">Немного о КубГУ</a></li>
+        <li><a href="https://www.kubsu.ru/ru/university/history-tradition" title="Интересные факты">История и традиции</a></li>
+        </ul>
+        <li><a title="Без href">Без href</a></li>
+        <li><a href=" ">С пустым href</a></li>
+        <li><a href="https://example.com/" rel="nofollow"> Запрещен переход поисковикам;</a></li>
+        <li><a href="http://example.com/" rel ="noindex"> Запрещенная для индексации поисковиками</a></li>
+        <li><p>Нападающий «Барселоны» <a href="https://www.sports.ru/messi/"> Лионель Месси</a> получил «Золотой мяч» на гала-вечере в театре Шатле.Журнал France Football назвал 32-летнего аргентинца лучшим футболистом 2019 года.
+        </p></li>
+        <li><img src="Фигуры.jpg" usemap="#figure" alt="Фигурки" style="width: 250px; ">
+        <map name="figure">
+        <area shape ="rect" coords ="25,25,125,125" href="https://en.wikipedia.org/wiki/Square" alt = "Красный квадрат">
+        <area shape ="circle" coords ="200,75,50" href="https://en.wikipedia.org/wiki/Circle" alt = "Зеленый круг">
+        </map>
+        <li><a href="/about">Относительная ссылка на страницу в текущем каталоге</a> </li>
+        <li><a href="/about/contacts"> Относительная ссылка в каталоге about </a> </li>
+        <li><a href="../page.html"> Относительная в каталоге уровнем выше текущего </a></li>
+        <li><a href="../../page.html"> Относительная в каталоге уровнем выше текущего </a></li>
+        <li><a href="https://vk.cc/c5SIn1">Сокращенная ссылка на главную страницу moodle.kubsu.ru</a></li>
+        <li><a href="https://vk.cc/c5SIoy">Сокращенная ссылка на внутреннюю страницу moodle.kubsu.ru</a> </li>
+	  </div>
+        <hr>
+		<div class="col-12 order-3 order-md-2">
+        <table class="maintable">
+          <tbody>
+          <tr>
+            <td colspan="2"><h2>Таблица</h2></td>
+          </tr>
+          <tr>
+            <td><b>Колонка1</b></td>
+            <td><b>Колонка2</b></td>
+          </tr>
+          <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+          </tr>
+          <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+          </tr>
+        </tbody></table>
+		</div>
+        <hr>
+		<div class="col-12 order-2 order-md-3">
+        <h2 class="h1" ;="" id="form">Форма</h2>
+
+   <form action="/" ;="" class="form" method="POST">
+
+          <label>
+              Имя:<br/>
+              <input name="field-name-1"
+                     value="" />
+          </label><br/>
+          <label>
+              E-mail:<br/>
+              <input name="field-email"
+                     value=""
+                     type="email" />
+          </label><br/>
+          <label>
+              Дата рождения:<br/>
+              <input name="field-date"
+                     value=""
+                     type="date" />
+          </label><br/>
+          Пол:<br/>
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-1" value="Значение1" />
+              Женский
+          </label>
+          <label>
+              <input type="radio"
+                     name="radio-group-1" value="Значение2" />
+              Мужской
+          </label><br/>
+          Количество конечностей:<br/>
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-2" value="Значение1" />
+              4
+          </label>
+          <label>
+              <input type="radio"
+                     name="radio-group-2" value="Значение2" />
+              6
+          </label><br/>
+          <label>
+              Сверхспособности:
+              <br/>
+              <select name="field-name-4[]"
+                      multiple="multiple">
+                  <option value="Значение1"> Бессмертие</option>
+                  <option value="Значение2">Прохождение сквозь стены</option>
+                  <option value="Значение3" selected="selected">Левитация</option>
+              </select>
+          </label><br/>
+          <label>
+              Биография:<br/>
+              <textarea name="field-name-2"></textarea>
+          </label><br/>
+          <br/>
+          <label>
+              <input type="checkbox"
+                     name="check-1" />
+              С контрактом ознакомлен(а)
+          </label><br/>
+          <input type="submit" value="Отправить" />
+    
+      </label></form></div></div>
+    </div></div></div>
+	<div class="col-md-12 order-4 px-sm-3">
+	<footer>
+      <div class="container-fluid"><h2>(c)Богус Рустам 23</h2></div>
+    </footer>
+	</div>
+	<div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
+</body>
