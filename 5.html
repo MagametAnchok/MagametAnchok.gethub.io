@@ -1,0 +1,37 @@
+<script>
+
+    function click1() {
+    const reg=/[^0-9]|\b0[0-9]+/;
+      let f1 = document.getElementsByName("field1");
+      let f2 = document.getElementsByName("field2");
+      let r = document.getElementById("result");
+      if((reg.test(f1[0].value) || reg.test(f2[0].value)) === true){
+        alert("Введите корректные значения!");
+      }
+      r.innerHTML = parseInt(f1[0].value)*parseInt(f2[0].value);
+      return false;
+    }
+    
+    </script>  
+    
+    <div id="result"></div>
+    <form>
+      <input name="field1" type="text">
+      <input name="field2" type="text">
+      <button id="button1" onclick="return click1();">ОК</button>
+      
+    </form>
+    
+    <script>
+    function onClick() {
+      alert("click");
+    }
+    
+    window.addEventListener('DOMContentLoaded', function (event) {
+      console.log("DOM fully loaded and parsed");
+      let b = document.getElementById("my-button");
+      b.addEventListener("click", click1);
+    });
+    </script>  
+    
+    <button id="my-button">ОК</button>
